@@ -150,7 +150,7 @@ router.post('/signin', (req, res) => {
 })
 
 //Modify user
-router.post('/edit', verify, (req, res) => {
+router.post('/edit',  (req, res) => {
     let { idNumber, firstName, lastName, cellphone, email, rol, password} = req.body;
     idNumber = idNumber.trim();
     firstName = firstName.trim();
